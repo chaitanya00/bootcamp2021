@@ -1,9 +1,9 @@
 resource "aws_instance" "create" {
     ami = "ami-0747bdcabd34c712a"
     instance_type = "t2.micro"
-    vpc_security_group_ids = ["sg-09c4aacfd70decc4a"]
-    subnet_id = "subnet-0c72c2e920b037b1a"
-    key_name = "test-bootcamp" 
+    vpc_security_group_ids = ["sg-04abb6b1453cec471"]
+    subnet_id = "subnet-094523098461b615e"
+    key_name = "boot" 
     user_data = file("nginx.sh")
     tags = {
         Name = "bootcamp-terraform"
